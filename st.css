@@ -1,0 +1,212 @@
+/* RESET & SAFETY */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(206, 18%, 92%);
+  color: rgb(9, 10, 10);
+}
+.main_container{
+  display: flex;
+  height: 100vh;
+}
+.sidebar{
+  background-color: white;
+  color: rgb(7, 7, 7);
+  width: 20%;
+  word-wrap: break-word;/*Agar word bahut lamba ho, to usse next line me tod do. */
+  overflow-wrap: break-word;/*browser ko force karta hai ki line break kar do jab jagah kam ho overflow nahi hone deta hai*/
+  font-size: clamp(14px, 2vw, 20px);/*clamp-Text screen ke hisab se size change karega*/
+  display: flex;
+  flex-direction: column;
+  position: relative;/*social media ko absolute karne ke liye*/
+  
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;         /* bahut strong */
+    color: #0056b3;            /* Allen blue */
+    text-transform: uppercase;
+  box-shadow: 0px 2px 3px rgb(11, 58, 168);/*shadow x,y,blure ,color*/
+}
+.menu{
+  margin-top: 30px;
+}
+.menu ul{
+  padding-left: 7px;
+}
+.menu li{
+  padding: 15px 0px;
+}
+.menu ul a{
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+.social_media{
+  position: absolute;
+  bottom: 20px;
+}
+.social_media ul{
+  padding-left: 10px;
+}
+.icon{
+  width: clamp(18px, 4vw, 30px);
+  height: auto;
+}
+
+.mainbox{
+  flex: 1;/*jo bacha hua space hai wo le lo*/
+  overflow: auto;/*scroll bar tab aayega jab content box se bahar jayega*/
+  padding: 0 1.2rem 0 1.2rem;
+}
+.ima{
+  padding: 15px;
+  border: 2px solid white;
+  box-shadow: 0px 2px 3px rgb(11, 58, 168);
+  height: 191.53px;
+  position: relative;
+  overflow: hidden;
+}
+.logo1{
+  position: absolute;
+  transition: 1s;
+}
+.nav{
+  text-align: center;
+  margin-top: 10px;
+}
+.cc{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+.ccc{
+  text-decoration: none;
+  
+}
+.card{
+  background-color: white;
+  width: 300px;
+  height: 240px;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  margin-left: 1.5rem;;
+  margin-top: 1rem;;
+}
+.card-container{
+ display: flex;
+ flex-wrap: wrap;
+}
+.card-img{
+  height: 60%;
+    width: 100%;
+    border-radius: 1.2rem;
+}
+.card-title{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.card-information{
+  opacity: 0.7;
+}
+.more-information{
+  background-color: blue;
+  font-size: .975rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 9999px;
+  height: 50px;
+
+}
+.more-information .more{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+ 
+}
+
+.footer{
+  position: fixed;
+  right: 3%;
+  background-color: transparent;
+   font-size: clamp(14px, 2vw, 20px);
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   column-gap: 0.5rem;;
+}
+.login a,
+.contact a, 
+.home a{
+  text-decoration: none;
+    border: 2.25px solid blue(16, 15, 17);
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(99, 46, 211);
+    padding: 6px 14px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/* FOOTER NAV */
+footer{
+  position: fixed;
+  right: 3%;
+  top: 20px; /* Footer ko top me set kiya */
+  background-color: transparent;
+  font-size: clamp(14px, 2vw, 20px);
+  display: flex;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;              /* ⭐ MOST IMPORTANT */
+  align-items: center;
+}
+
+/* COMMON BUTTON STYLE */
+.home a,
+.contact a,
+.login a{
+    text-decoration: none;
+    border: 2px solid rgb(22 21 23);
+    border-radius: 15px;
+    color: white;
+    background-color: #0056b3;
+    padding: 6px 14px;
+    white-space: nowrap;/* Text ek line me rahega */
+    display: inline-block;/* Inline block isliye ki hum padding de sakein */
+}
+.contact a{
+  border-radius: 50%;
+}
+
+/* OPTIONAL: HOVER EFFECT */
+.home a:hover,
+.contact a:hover,
+.login a:hover{
+  background-color: #084688;
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width:500px){
+  footer{
+    right: 1%;
+    top: 10px; /* Mobile me bhi top me */
+    row-gap: 0.4rem;
+  }
+  .home a,
+  .contact a,
+  .login a{
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}

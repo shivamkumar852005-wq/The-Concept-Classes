@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .acontainer{
+            display: flex;
+            height: 100vh;
+        }
+        .abody{
+           background-color: #f4f6f8; 
+           flex: 1;
+           overflow: auto;/*    isase flex achhe se kaam karta hai */
+        }
+        .he{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p{
+            font-size: 20px;
+            margin: 40px;
+            line-height: 1.6;
+            font-family: Arial, sans-serif;
+        }
+        .about{
+            margin: 50px;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 6px 20px rgba(7, 8, 0, 0.3);
+        }
+        .tex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .tex p{
+            margin: 0;
+        }
+        .logo{
+            border: 2px solid black;
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            object-fit: cover; /*Image tedhi (stretch) nahi hoti, Extra part crop ho jata hai and Container poora bhara hua dikhta hai*/
+            box-shadow: 1px 6px 20px rgba(7, 228, 0, 0.6);
+        }
+        @media (max-width: 768px){
+            .he h1{
+                font-size: 24px;
+                padding: 25px;
+                color: #0b5ed7;
+            }
+             p{
+                margin: 20px;
+                font-size: 21px;
+            }
+             .about{
+                margin: 20px;
+            }
+
+            .tex{
+                flex-direction: column;/* 768px = tablet & mobile ka common breakpoint */
+                text-align: center;
+            }
+            .tex img{
+                 order: 1;   /* image pehle */
+            }
+
+           .tex div{
+               order: 2;   /* text image ke niche */
+            }
+
+            .logo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="acontainer">
+        <div class="abody">
+            <div class="he">
+               <h1>WELCOME TO THE CONCEPT CLASSES</h1>
+            </div>
+            <p>
+                The Concept Classes is a trusted coaching institute for Class 11th and 12th students.
+                Here, both <b>Hindi and English medium classes</b> are available so that every student can learn with comfort.
+                Experienced faculty guide students in every subject.
+                <b>Physics & Mathematics are taught by Sonu Sir, while Chemistry & Biology are taught by Sataya Bharat Sir.</b>
+                With easy-to-understand teaching methods and regular practice,
+                The Concept Classes helps students build strong concepts and score better in exams.
+            </p>
+            <div class="about">
+                <div class="tex">
+                    <div>
+                        <p>Hii I Am Shivam Jayswal</p>
+                        <p>Welcome To My profile</p>
+                    </div>
+                    <img src="assets/image/Snapchat-1918994974[1].jpg" class="logo">
+                </div>
+            </div>
+            <div class="about">
+                <div class="tex">
+                    <div>
+                        <p>Hii I Am Shivam Jayswal</p>
+                        <p>Welcome To My profile</p>
+                    </div>
+                    <img src="assets/image/Snapchat-1918994974[1].jpg" class="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="afooter">
+            <div class="footer">
+              <div class="home"><a href="index.html">Home</a></div>
+              <div class="contact"> <a href="#"> <i class="fa-solid fa-phone"></i></a></div>
+              <div class="login"> <a href="#">Login</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
