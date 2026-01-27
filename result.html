@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,6 +39,7 @@
         .rcard:hover{
             box-shadow: 0px 4px 16px rgb(127, 211, 151);
         }
+      
     </style>
 </head>
 <body>
@@ -157,5 +158,203 @@
             </div>
         </div>
     </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .resultmain{
+            background-color: aliceblue;
+        }
+        .high_score{
+           display: grid;
+           gap: 10px;
+           grid-template-columns: 1fr 1fr 4fr;
+           margin-bottom: 20px;
+        }
+        .photo{
+            width: 196px;
+            height: 200px;
+            border-radius: 5PX;
+            object-fit: cover;
+            display: block;
+        }
+        .score{
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 196px;
+            height: auto;
+            overflow: hidden; /* Ensures content fits within the card */
+            box-shadow: 0px 4px 8px black;
+            transition:1s;
+        }
+        .score:hover{
+            transform: scale(1.04); /* Enlarges the card */
+            z-index: 1.4;            /* Brings card to front */
+            transition: 0.3s ease;  /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+        }
+        
+        .des{
+            padding: 0 2px 0 2px;
+        }
+        @media (max-width:600px){
+            .high_score{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .photo{
+                width: 100%;
+                height: auto;
+                border-radius: 5PX;
+            }
+            .score{
+                border: 2px solid black;
+                border-radius: 5px;
+                width: 100%;
+                height: auto;
+                box-shadow: 0px 4px 8px black;
+                transition:1s;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="resultmain">
+        <a href="2022.html">&#x27A2;2022 result of the concept classes</a>
+        <hr>
+        <a href="2023.html">&#x27A2;2023 result of the concept classes</a>
+        <hr>
+        <a href="2024.html">&#x27A2;2024 result of the concept classes</a>    
+        <hr>
+        <a href="2025.html">&#x27A2;2025 result of the concept classes</a>
+        <hr>
+    </div>
+    <hr>
+
+    <h1>Topper of 2022 Batch</h1>
+    <div class="high_score">
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student1"class="photo">
+            <div class="des">
+                <h3>NAME:SANDHYA KUMARI</h3>
+                <p>MARKS: 408</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Topper of 2023 Batch</h1>
+    <div class="high_score">
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student1" class="photo">
+            <div class="des">
+                <h3>NAME: SANJNA</h3>
+                <p>MARKS: 406</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: MUSKAN</h3>
+                <p>MARKS: 410</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/boy.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: AMITABH</h3>
+                <p>MARKS: 412</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <h1>Topper of 2024 Batch</h1>
+    <div class="high_score">
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student1" class="photo">
+            <div class="des">
+                <h3>NAME: A</h3>
+                <p>MARKS: 98%</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/boy.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: ankit</h3>
+                <p>MARKS: 97%</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/boy.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: ankit</h3>
+                <p>MARKS: 97%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Topper of 2025 Batch</h1>
+    <div class="high_score">
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student1" class="photo">
+            <div class="des">
+                <h3>NAME: shivam</h3>
+                <p>MARKS: 98%</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: ankit</h3>
+                <p>MARKS: 97%</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/boy.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: ankit</h3>
+                <p>MARKS: 97%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Topper of 2026 Batch</h1>
+    <div class="high_score">
+        <div class="score">
+            <img src="assets/image/girl.png" alt="student1" class="photo">
+            <div class="des">
+                <h3>NAME: shivam</h3>
+                <p>MARKS: 98%</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/boy.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: ankit</h3>
+                <p>MARKS: 97%</p>
+            </div>
+        </div>
+        <div class="score">
+            <img src="assets/image/boy.png" alt="student2" class="photo">
+            <div class="des">
+                <h3>NAME: ankit</h3>
+                <p>MARKS: 97%</p>
+            </div>
+        </div>
+    </div>
+             
 </body>
 </html>

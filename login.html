@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body{
+      min-height: 100vh;
+      background: #f2f2f2;
+    }
+
+    .login-card{
+      background: linear-gradient(135deg, #6a5cff, #c850ff);
+      color: #fff;
+      border-radius: 12px;
+    }
+
+    .form-control{
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid rgba(255,255,255,0.6);
+      border-radius: 0;
+      color: #fff;
+    }
+
+    .form-control::placeholder{
+      color: rgba(255,255,255,0.7);
+    }
+
+    .form-control:focus{
+      box-shadow: none;
+      border-bottom-color: #fff;
+      background: transparent;
+      color: #fff;
+    }
+
+    .btn-login{
+      background: #fff;
+      color: #6a5cff;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    .btn-login:hover{
+      background: #f1f1f1;
+    }
+
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Bootstrap container , ye maine nahi banaya hai -->
+  <div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+
+        <!-- Bootstrap card -->
+        <div class="card login-card shadow-lg p-4 border-0">
+
+          <h3 class="text-center mb-4">LOG IN</h3>
+
+          <form>
+
+            <!-- Username -->
+            <div class="mb-4">
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+
+            <!-- Remember -->
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="remember">
+              <label class="form-check-label" for="remember">
+                Remember me
+              </label>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="btn btn-login w-100 py-2">
+              Login
+            </button>
+
+          </form>
+
+          <div class="text-center mt-3">
+            <p class="mb-1"><a href="#">Forgot Password?</a></p>
+            <p class="mb-0">Don't have an account? <a href="#">Sign Up</a></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
