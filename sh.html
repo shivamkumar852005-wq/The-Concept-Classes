@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="st.css" >
+    <style>
+        .itsme{
+            border: 2px solid rgb(242, 77, 77);
+            margin: 20px;
+            padding: 10px;
+        }
+        .text{
+          
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .photo{
+            height: 250px;
+           width: 250px; 
+            border-radius: 50%;
+            object-fit: cover; /*Image tedhi (stretch) nahi hoti, Extra part crop ho jata hai and Container poora bhara hua dikhta hai*/
+        }
+        @media (max-width: 768px){
+             .text{
+               flex-direction: column;
+               text-align: center;
+            }
+            .text .image{
+                order: 1;
+            }
+            .text .info{
+                order: 2;
+            }
+            .photo{
+                height: 150px;
+                width: 150px;
+            }
+          
+        }
+    </style>
 </head>
 <body>
-     <div class="about">
-                <div class="tex">
-                    <div>
-                        <p>Hii I Am Shivam Jayswal</p>
-                        <p>Welcome To My profile</p>
-                    </div>
-                    <img src="assets/image/Snapchat-1918994974[1].jpg" class="logo">
-                </div>
+    <div class="itsme">
+        <div class="text">
+            <div class="info"><h2>Hii i am Shivam,developer of this website</h2>
+                <p>This is a coaching website and the namme of coaching is The Concept Classes.
+                    I am choosing that name because its my coaching and i love my coaching and i want to make it more popular and i want to make it more better than other coaching.
+                </p>
+            </div> 
+            <div class="image">
+            <img src="assets/image/Snapchat-1918994974[1].jpg" alt="image" class="photo">
         </div>
+        </div>
+    </div>
     
 </body>
 </html>
